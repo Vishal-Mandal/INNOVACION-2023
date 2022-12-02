@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Syahrizaldev"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'><link rel="stylesheet" href="../assets/css/gallery.css">
+<link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/>
+
+
+<!-- Main Stylesheet File -->
+<link href="../assets/css/style.css" rel="stylesheet">
+<style>
+
+  body{
+    background-image: url(../assets/media/image12.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .dropbtn {
+color: #fff;
+
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 4px;
+padding-right: 37px;
+font-family: "Raleway", sans-serif;
+background:#1224cb;
+border: 2px solid #162cff;
+transition: all ease-in-out 0.3s;
+font-weight: 500;
+line-height: 1;
+font-size: 13px;
+margin-left: 11px;
+}
+.dropbtnn {
+color:rgba(202, 206, 221, 0.8);
+font-family: "Raleway", sans-serif;
+text-decoration: none;
+border: none;
+font-size: 15px;
+background:transparent;
+transition: all ease-in-out 0.3s;
+font-weight: 600;
+margin-left: 8px;
+margin-top: 2px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 1px; 
+outline: none
+
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+background-color: #f9f9f9;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+
+text-decoration: none;
+
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+color: #0007e0;
+background-color: rgb(223, 227, 230);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+
+transition: all ease-in-out 0.3s;
+background-color: transparent;
+border: 2px solid #162cff;
+
+}
+
+#mobile-nav .dropbtnn{
+font-size: 17px;
+
+color: #fff;
+font-family: "Raleway", sans-serif;
+
+text-decoration: none;
+outline: none;
+}
+
+#mobile-nav .dropdown-content{
+background:rgb(115 123 153 / 90%)
+}
+#reg{
+  background:#1224cb;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid lightgrey;
+  line-height: 0.5;
+  width: fit-content ;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+
+
+</style>
+</head>
+
+<body>
+  
+
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="/" class="scrollto"><img src="../assets/media/logo.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./all events.html">Events</a></li>
+          <li><a href="/#schedule">Schedule</a></li>
+          <li class="menu-active" ><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./sponsors.html">Sponsors</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li id = "reg"><a href="/#registrationdetails">Register</a></li>
+
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn" id="dropbtn-login" style="padding-left: 32px;">Login</button>
+              <div class="dropdown-content">
+                <a href="/sign">Participant</a>
+                <a href="/sign-cdn">Coordinator</a>
+
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+<!-- partial:index.partial.html -->
+<main class="main">
+
+
+
+<!-- Element Video 16:9 -->
+ 
+<div class="onb-embed-responsive onb-embed-responsive__16by9" style="margin: 100px auto ;">
+    
+  <video class="onb-embed-responsive-item"
+        width="640" 
+        height="360" 
+        controls 
+        autoplay 
+        loop>
+     <source src="../assets/media/video11.mp4">
+     <source src="../assets/media/video11.mp4"
+             type="video/mp4">
+ </video>
+
+</div>
+
+<!-- Element Video 4:3 -->
+
+
+  <div class="container">
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery6.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/1.jpg" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery6.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/2.jpg" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery6.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/3.jpg" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery6.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/4.jpg" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery6.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery6.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery5.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery5.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    
+    
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery8.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery8.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery7.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery7.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery25.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery25.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery3.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery3.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery24.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery24.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery9.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery9.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery13.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery13.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery14.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery14.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery15.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery15.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery1.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery1.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery2.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery2.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery4.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery4.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery10.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery10.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery11.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery11.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery12.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery12.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery16.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery16.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery17.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery17.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery18.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery18.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery19.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery19.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery20.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery20.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery21.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery21.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery22.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery22.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery23.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery23.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery26.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery26.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery27.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery27.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery25.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery25.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery24.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery24.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery26.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery26.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery28.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery28.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery29.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery29.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery30.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery30.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery31.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery31.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery32.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery32.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery33.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery33.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery34.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery34.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery35.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery35.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery36.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery36.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    
+    
+
+    
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/gallery37.png" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/gallery37.png" alt="Image venue">
+        </a>
+      </div>
+    </div>
+  
+  <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/IMG_9999.jpg" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/IMG_9999.jpg" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/IMG_1130.JPG" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/IMG_1130.JPG" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/IMG_0919.JPG" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/IMG_0919.JPG" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/IMG_0457.jpg" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/IMG_0457.jpg" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/IMG_0364.jpg" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/IMG_0364.jpg" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/IMG_0123.jpg" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/IMG_0123.jpg" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/DSC_0103.JPG" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/DSC_0103.JPG" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/DSC_0045.JPG" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/DSC_0045.JPG" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/Copy of Copy of DSC_2367.JPG" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/Copy of Copy of DSC_2367.JPG" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/Copy of Copy of DSC_1332.JPG" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/Copy of Copy of DSC_1332.JPG" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/Copy of Copy of DSC_1326.JPG" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/Copy of Copy of DSC_1326.JPG" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/Copy of Copy of DSC_1318.JPG" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/Copy of Copy of DSC_1318.JPG" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/Copy of Copy of DSC_0558.JPG" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/Copy of Copy of DSC_0558.JPG" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/Copy of Copy of 20220410034942_IMG_0070.JPG" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/Copy of Copy of 20220410034942_IMG_0070.JPG" alt="Image venue">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <a href="../assets/media/1/1524949_10202204319543548_1836516579_n.jpg" data-fancybox="venue" data-caption="Caption Images 1">
+          <img src="../assets/media/1/1524949_10202204319543548_1836516579_n.jpg" alt="Image venue">
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</main>
+<!-- partial -->
+
+<script src="../assets/lib/jquery/jquery.min.js"></script>
+<script src="../assets/lib/superfish/superfish.min.js"></script>
+<script src="../assets/lib/wow/wow.min.js"></script>
+<script src="../assets/lib/venobox/venobox.min.js"></script>
+
+<!-- Template Main Javascript File -->
+<script src="../assets/js/main-others.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script><script  src="../assets/js/gallery.js"></script>
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4  footer-info">
+          <img src="../assets/media/logo.png" alt="TheEvenet"/>
+        </div>
+
+        
+
+        <div class="col-lg-4 col-md-9 footer-links">
+          <h4>Useful Links</h4>
+          <br>
+          
+         
+          <a href="/register">
+            <button class="footerbtn">Register Now</button>
+          </a>
+        
+          <br><br>
+          <a href="https://goo.gl/maps/hun1Xpozt8yGYJVJA">
+            <a href="https://goo.gl/maps/6gzdzSKuE4PE22ADA">
+              <button class="footerbtn">              
+                        Location
+                    </a>
+            </button>
+        </a>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            Management House, D-1, Sector-V, Saltlake Electronics Complex <br>
+Kolkata – 700 091, West Bengal, India. <br>
+
+            
+
+            <strong>Email:</strong> iemxinnovacion@gmail.com<br>
+          </p>
+
+          <div class="social-links">
+            <a href="http://facebook.com/iem.innovacion"><img src="../assets/media/facebook.png" height="28" width="28" alt="Facebook"></a>
+            <a href="https://www.instagram.com/ieminnovacion/"><img src="../assets/media/insta.png" height="32" width="32" alt="Instagram"></i></a>
+            <a href="https://www.youtube.com/@ieminnovacion"><img src="../assets/media/web.png" height="25px" width="85%" alt="Web"></i></a>
+            <a href="../pages/contact.html"><img src="../assets/media/contact_us_logo.png" height="28.5px"
+                           width="97%" alt="Web"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+            <div class="copyright">
+               &copy; Copyright <strong>INNOVACIÓN 2023</strong>. All Rights Reserved
+            </div>
+         </div>
+</footer><!-- #footer -->
+
+</body>
+</html>

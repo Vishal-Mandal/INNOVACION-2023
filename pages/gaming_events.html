@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>CodePen - Responsive Heading Slider - Swiper</title>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css'>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
+   <link rel='stylesheet' href='https://unpkg.com/aos@2.3.1/dist/aos.css'>
+   <link rel="stylesheet" href="../assets/css/all events.css">
+
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      crossorigin="anonymous" />
+   <link href="../assets/css/style.css" rel="stylesheet">
+   <link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <style>
+      .dropbtn {
+         color: #fff;
+
+         padding-top: 5px;
+         padding-bottom: 5px;
+         padding-left: 4px;
+         padding-right: 37px;
+         font-family: "Raleway", sans-serif;
+         background: #1224cb;
+         border: 2px solid #162cff;
+         transition: all ease-in-out 0.3s;
+         font-weight: 500;
+         line-height: 1;
+         font-size: 13px;
+         margin-left: 11px;
+      }
+
+      .dropbtnn {
+         color: rgba(202, 206, 221, 0.8);
+         font-family: "Raleway", sans-serif;
+         text-decoration: none;
+         border: none;
+         font-size: 15px;
+         background: transparent;
+         transition: all ease-in-out 0.3s;
+         font-weight: 600;
+         margin-left: 8px;
+         margin-top: 2px;
+         padding-top: 5px;
+         padding-bottom: 5px;
+         padding-left: 1px;
+         outline: none
+      }
+
+
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+         position: relative;
+         display: block;
+      }
+
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+         display: none;
+         background-color: #f9f9f9;
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+         z-index: 1;
+      }
+
+      /* Links inside the dropdown */
+      .dropdown-content a {
+         color: black;
+
+         text-decoration: none;
+
+         display: block;
+      }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+         color: #0007e0;
+         background-color: rgb(223, 227, 230);
+      }
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+         display: block;
+
+      }
+
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {
+
+         transition: all ease-in-out 0.3s;
+         background-color: transparent;
+         border: 2px solid #162cff;
+
+      }
+
+      #mobile-nav .dropbtnn {
+         font-size: 17px;
+
+         color: #fff;
+         font-family: "Raleway", sans-serif;
+
+         text-decoration: none;
+         outline: none;
+      }
+
+      #mobile-nav .dropdown-content {
+         background: rgb(115 123 153 / 90%)
+      }
+      #reg{
+  background:#1224cb;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid lightgrey;
+  line-height: 0.5;
+  width: fit-content ;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+
+   </style>
+
+</head>
+
+<body>
+   <video style="position:fixed;z-index: -100;"
+      src="../assets/media/Ourevents/background blue particles dust abstract light motion titles cinematic background loop.mp4"
+      autoplay muted loop></video>
+
+   <header id="header">
+      <div class="container">
+
+         <div id="logo" class="pull-left">
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+            <a href="/" class="scrollto"><img src="../assets/media/logo.png" alt="" title=""></a>
+         </div>
+
+         <nav id="nav-menu-container">
+            <ul class="nav-menu">
+               <li class="menu-active"><a href="/">Home</a></li>
+               <li><a href="./about.html">About</a></li>
+               <li class="nav-menu"><a href="./all events.html">Events</a></li>
+               <li><a href="/#schedule">Schedule</a></li>
+               <li><a href="./gallery.html">Gallery</a></li>
+               <li><a href="./sponsors.html">Sponsors</a></li>
+               <li><a href="./contact.html">Contact Us</a></li>
+               <li id = "reg"><a href="/#registrationdetails">Register</a></li>
+               <li>
+                  <div class="dropdown">
+                     <button class="dropbtn" id="dropbtn-login" style="padding-left: 32px;">Login</button>
+                     <div class="dropdown-content">
+                        <a href="/sign">Participant</a>
+                        <a href="/sign-cdn">Coordinator</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </nav><!-- #nav-menu-container -->
+      </div>
+   </header><!-- #header -->
+<br><br>
+   <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+         <!-- Slider -->
+
+         <!-- Slide1 -->
+      
+            
+
+         <div class="swiper-slide" id="404">
+            <span class="number">1</span>
+
+            <div class="pic">
+               <h1>VALIANTS</h1>
+
+               <img src="../assets/media/evnt/Valorant.jpg" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>If you live, breathe and eat 'attack or defend' like a pro then we have good news for you. Innovación
+                  2023,
+                  the biggest techfest of Kolkata, presents to you the opportunity of bringing your love for gaming and
+                  Valorant to
+                  the arena. Let the bomb of your love for gaming explode at
+                  Innovación 2023. May the weapons of your skills define you as an unforgettable OP! Welcome
+                  to Valorant, jod.</p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/136mF_ExPyaXlkIj7SWVAnx_bYmYYabcr/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+            </div>
+         </div>
+
+         <div class="swiper-slide" id="404">
+            <span class="number">2</span>
+
+            <div class="pic">
+               <h1>FIFA</h1>
+
+               <img src="../assets/media/evnt/FIFA.jpg" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>Has an unpredictable goal by the team you're supporting ever left you feeling like the world is an
+                  extension of heaven
+                  itself? Has a penalty ever left you dancing in joy or a red card left you in fits of anger? If you
+                  live, breathe and
+                  sleep football, then we have the perfect competition for you. Innovación 2023, the biggest techfest of
+                  Kolkata, brings
+                  to you the incredible opportunity of bringing your love for gaming and football to the arena. May your
+                  envious skills
+                  take you to the zenith. Welcome to Fifa!</p>
+               <button class="btn1046"><a
+                     href=""
+                     style="text-decoration-line:none;">rules</a></button>
+
+            </div>
+         </div>
+
+
+         <div class="swiper-slide" id="404">
+            <span class="number">3</span>
+
+            <div class="pic">
+               <h1>COD Mobile</h1>
+
+               <img src="../assets/media/evnt/cod.jpg" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>Have you ever had the incredible urge of asking the K/D of a random stranger on the streets? Have you ever been torn apart by the
+                  dilemma of Killhouse or Crossfire? If your iconic characters in Battle Royale have left others reeling, then we have the perfect
+                  competition in mind. Innovación 2023, the biggest techfest of Kolkata, brings you to opportunity of experiencing the thrill of
+                  Call Of Duty. Innovación 2023 promises to be your Gunsmith and enhance the weapons of your gaming skills. Bring in the unimaginably superior
+                  grenade of your skills to win as you battle against the best of the best otherwise you may have to face 'martyrdom perks' !</p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/10wOgdohoeg60HKucQh3M6h2c-6pELHWL/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+            </div>
+         </div>
+
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-arrows">
+         <div class="swiper-button-prev"><span></span></div>
+         <div class="swiper-button-next"><span></span></div>
+      </div>
+   </div>
+   <footer id="footer">
+      <div class="footer-top">
+         <div class="container">
+            <div class="row">
+
+               <div class="col-lg-4  footer-info">
+                  <img src="../assets/media/logo.png" alt="TheEvenet" />
+               </div>
+
+
+
+               <div class="col-lg-4 col-md-9 footer-links">
+                  <h4>Useful Links</h4>
+                  <br>
+
+
+                  <a href="/register">
+                     <button class="footerbtn">Register Now</button>
+                  </a>
+
+                  <br><br>
+                  <a href="https://goo.gl/maps/hun1Xpozt8yGYJVJA">
+                     <a href="https://goo.gl/maps/6gzdzSKuE4PE22ADA">
+                        <button class="footerbtn">
+                           Location
+                     </a>
+                     </button>
+                  </a>
+               </div>
+
+               <div class="col-lg-4 col-md-6 footer-contact">
+                  <h4>Contact Us</h4>
+                  <p>
+                     Management House, D-1, Sector-V, Saltlake Electronics Complex <br>
+                     Kolkata – 700 091, West Bengal, India. <br>
+
+
+
+                     <strong>Email:</strong> iemxinnovacion@gmail.com<br>
+                  </p>
+
+                  <div class="social-links">
+                     <a href="http://facebook.com/iem.innovacion"><img src="../assets/media/facebook.png" height="28"
+                           width="28" alt="Facebook"></a>
+                     <a href="https://www.instagram.com/ieminnovacion/"><img src="../assets/media/insta.png" height="32"
+                           width="32" alt="Instagram"></i></a>
+                     <a href="https://www.youtube.com/@ieminnovacion"><img src="../assets/media/web.png" height="25px"
+                           width="85%" alt="Web"></i></a>
+                     <a href="../pages/contact.html"><img src="../assets/media/contact_us_logo.png" height="28.5px"
+                           width="97%" alt="Web"></i></a>
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+            <div class="copyright">
+               &copy; Copyright <strong>INNOVACIÓN 2023</strong>. All Rights Reserved
+            </div>
+         </div>
+      </div>
+   </footer><!-- #footer -->
+   <!-- partial -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+   <script src="../assets/js/all events.js"></script>
+   <script src="../assets/lib/jquery/jquery.min.js"></script>
+   <script src="../assets/lib/superfish/superfish.min.js"></script>
+   <script src="../assets/lib/wow/wow.min.js"></script>
+   <script src="../assets/lib/venobox/venobox.min.js"></script>
+
+   <!-- Template Main Javascript File -->
+   <script src="../assets/js/main-others.js"></script>
+</body>
+
+</html>

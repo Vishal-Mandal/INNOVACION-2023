@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>CodePen - Responsive Heading Slider - Swiper</title>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css'>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
+   <link rel='stylesheet' href='https://unpkg.com/aos@2.3.1/dist/aos.css'>
+   <link rel="stylesheet" href="../assets/css/all events.css">
+
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      crossorigin="anonymous" />
+   <link href="../assets/css/style.css" rel="stylesheet">
+   <link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <style>
+      .dropbtn {
+         color: #fff;
+
+         padding-top: 5px;
+         padding-bottom: 5px;
+         padding-left: 4px;
+         padding-right: 37px;
+         font-family: "Raleway", sans-serif;
+         background: #1224cb;
+         border: 2px solid #162cff;
+         transition: all ease-in-out 0.3s;
+         font-weight: 500;
+         line-height: 1;
+         font-size: 13px;
+         margin-left: 11px;
+      }
+
+      .dropbtnn {
+         color: rgba(202, 206, 221, 0.8);
+         font-family: "Raleway", sans-serif;
+         text-decoration: none;
+         border: none;
+         font-size: 15px;
+         background: transparent;
+         transition: all ease-in-out 0.3s;
+         font-weight: 600;
+         margin-left: 8px;
+         margin-top: 2px;
+         padding-top: 5px;
+         padding-bottom: 5px;
+         padding-left: 1px;
+         outline: none
+      }
+
+
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+         position: relative;
+         display: block;
+      }
+
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+         display: none;
+         background-color: #f9f9f9;
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+         z-index: 1;
+      }
+
+      /* Links inside the dropdown */
+      .dropdown-content a {
+         color: black;
+
+         text-decoration: none;
+
+         display: block;
+      }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+         color: #0007e0;
+         background-color: rgb(223, 227, 230);
+      }
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+         display: block;
+
+      }
+
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {
+
+         transition: all ease-in-out 0.3s;
+         background-color: transparent;
+         border: 2px solid #162cff;
+
+      }
+
+      #mobile-nav .dropbtnn {
+         font-size: 17px;
+
+         color: #fff;
+         font-family: "Raleway", sans-serif;
+
+         text-decoration: none;
+         outline: none;
+      }
+
+      #mobile-nav .dropdown-content {
+         background: rgb(115 123 153 / 90%)
+      }
+      #reg{
+  background:#1224cb;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid lightgrey;
+  line-height: 0.5;
+  width: fit-content ;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+
+   </style>
+
+</head>
+
+<body>
+   <video style="position:fixed;z-index: -100;"
+   src="../assets/media/Ourevents/background blue particles dust abstract light motion titles cinematic background loop.mp4"
+   autoplay muted loop></video>
+
+   <header id="header">
+      <div class="container">
+
+         <div id="logo" class="pull-left">
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+            <a href="/" class="scrollto"><img src="../assets/media/logo.png" alt="" title=""></a>
+         </div>
+
+         <nav id="nav-menu-container">
+            <ul class="nav-menu">
+               <li><a href="/">Home</a></li>
+               <li><a href="./about.html">About</a></li>
+               <li class="menu-active"><a href="./all events.html">Events</a></li>
+               <li><a href="/#schedule">Schedule</a></li>
+               <li><a href="./gallery.html">Gallery</a></li>
+               <li><a href="./sponsors.html">Sponsors</a></li>
+               <li><a href="./contact.html">Contact Us</a></li>
+               <li id = "reg"><a href="/#registrationdetails">Register</a></li>
+               <li>
+                  <div class="dropdown">
+                     <button class="dropbtn" id="dropbtn-login" style="padding-left: 32px;">Login</button>
+                     <div class="dropdown-content">
+                        <a href="/sign">Participant</a>
+                        <a href="/sign-cdn">Coordinator</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </nav><!-- #nav-menu-container -->
+      </div>
+   </header><!-- #header -->
+<br><br>
+   <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+         <!-- Slider -->
+
+         <!-- END Slide1 -->
+         <!-- Slide2 --><div class="swiper-slide">
+            <span class="number">01</span>
+            <div class="pic">
+               <h1>Tracker
+               </h1>
+
+               <img src="../assets/media/evnt/1.jpg" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>Accuracy is as important as speed when it comes to line follower robots. Following a single line with
+                  a few curves and loops seems to be an easy job but not every robot stands up to the constraints that a
+                  single line imposes. The discipline of your automatons are set to be tested when they enter the
+                  tracker arena on 3th-5th March with hundreds of others that will race against time to bustle from
+                  start to finish in the minimum possible time. A perfect blend of speed and accuracy is the demand of
+                  the hour.
+
+               </p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/1-8xuYI4mYaIoILaJ67O5_oCQDYBYns-n/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+            </div>
+         </div>
+         <!-- END Slide1 -->
+
+
+         <!-- Slide1 -->
+         <div class="swiper-slide" id="xrce">
+            <span class="number">02</span>
+            <div class="pic">
+               <h1>X-Race
+               </h1>
+
+               <img src="../assets/media/evnt/8.jpg" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>It is time to build a bot, less like a bot but more like an SUV. Be prepared for the dirt, the hills,
+                  the pots, the caves, the tarmac and obstacles you will better prefer to avoid. Here we invite zealots
+                  from all parts of the country to bustle their bots on the X-Race arena, at Innovacion 2023, the
+                  biggest techfest in Kolkata. The twitchy terrains are ready to test your speed and agility and to
+                  provide a groovy experience to the speed fanatic in you. We make your dream to off-road come true at
+                  the biggest techfest in Kolkata, Innovacion 2023! So pull out your tools from mothballs and get to
+                  work.</p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/10CQOWZSEFFNn7CNLd2E1GhoEHM4mydjl/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+            </div>
+         </div>
+         <!-- END Slide1 -->
+         <!-- Slide2 -->
+         <!-- END Slide1 -->
+         <!-- Slide2 -->
+         <!-- Slider -->
+
+         <!-- Slide1 -->
+         <div class="swiper-slide" id="rbft">
+            <span class="number">03</span>
+
+            <div class="pic">
+               <h1>Robofooties
+               </h1>
+
+               <img src="../assets/media/evnt/4.jpg" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>The tension was palpable in the audience as two robots played a soccer match. Move, supporters of one
+                  team shouted. He, the other robot is blocking us, alleged the others. Robofooties that's what the game
+                  was called. Turn on the heat as its time to witness the biggest Robofootball Competition in the town,
+                  at Innovacion 2023. The two-rounds event is an ultimate showcase of love of robotics and football
+                  where each team battles to be the best at the biggest techfest in Kolkata, Innovacion 2023.</p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/10Zf5zssZVeGaPtgvjBSlo8Ru6bxxLgaa/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+            </div>
+         </div>
+
+         <div class="swiper-slide" id="404">
+            <span class="number">04</span>
+
+            <div class="pic">
+               <h1>Hell in a Cell
+               </h1>
+
+               <img src="../assets/media/evnt/20.jpg" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>Unsure how lethal combat could be? You have come to the right battle front.
+                  Here we have Optimus Prime and Megatron with deadly weapons and robust defense mechanisms
+                  battling it out in a hell-in-a-cell. The sight of the heavy irate metallic bots fighting each other
+                  with
+                  both celerity and domain specific skills seem to create an incendiary within every soul such that they
+                  eagerly await for the survivor to rip off and demolish the other in the end which is where this fight
+                  for survival ultimately comes to an end. Precisely, this is the chance you have been waiting for to
+                  let
+                  loose the fire in you and exercise the license to kill for glory. </p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/12rLDk_ESBE3Hkye8jSkXDuLh4v1gv2rk/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+            </div>
+         </div>
+
+
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-arrows">
+         <div class="swiper-button-prev"><span></span></div>
+         <div class="swiper-button-next"><span></span></div>
+      </div>
+   </div>
+   <footer id="footer">
+      <div class="footer-top">
+         <div class="container">
+            <div class="row">
+
+               <div class="col-lg-4  footer-info">
+                  <img src="../assets/media/logo.png" alt="TheEvenet" />
+               </div>
+
+
+
+               <div class="col-lg-4 col-md-9 footer-links">
+                  <h4>Useful Links</h4>
+                  <br>
+
+
+                  <a href="/register">
+                     <button class="footerbtn">Register Now</button>
+                   </a>
+
+                  <br><br>
+                  <a href="https://goo.gl/maps/hun1Xpozt8yGYJVJA">
+                     <a href="https://goo.gl/maps/6gzdzSKuE4PE22ADA">
+                        <button class="footerbtn">
+                           Location
+                     </a>
+                     </button>
+                  </a>
+               </div>
+
+               <div class="col-lg-4 col-md-6 footer-contact">
+                  <h4>Contact Us</h4>
+                  <p>
+                     Management House, D-1, Sector-V, Saltlake Electronics Complex <br>
+                     Kolkata – 700 091, West Bengal, India. <br>
+
+
+
+                     <strong>Email:</strong> iemxinnovacion@gmail.com<br>
+                  </p>
+
+                  <div class="social-links">
+                     <a href="http://facebook.com/iem.innovacion"><img src="../assets/media/facebook.png" height="28" width="28" alt="Facebook"></a>
+                     <a href="https://www.instagram.com/ieminnovacion/"><img src="../assets/media/insta.png" height="32" width="32" alt="Instagram"></i></a>
+                     <a href="https://www.youtube.com/@ieminnovacion"><img src="../assets/media/web.png" height="25px" width="85%" alt="Web"></i></a>
+                     <a href="../pages/contact.html"><img src="../assets/media/contact_us_logo.png" height="28.5px"
+                           width="97%" alt="Web"></i></a>
+                   </div>
+
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+            <div class="copyright">
+               &copy; Copyright <strong>INNOVACIÓN 2023</strong>. All Rights Reserved
+            </div>
+         </div>
+      </div>
+   </footer><!-- #footer -->
+   <!-- partial -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+   <script src="../assets/js/all events.js"></script>
+   <script src="../assets/lib/jquery/jquery.min.js"></script>
+   <script src="../assets/lib/superfish/superfish.min.js"></script>
+   <script src="../assets/lib/wow/wow.min.js"></script>
+   <script src="../assets/lib/venobox/venobox.min.js"></script>
+
+   <!-- Template Main Javascript File -->
+   <script src="../assets/js/main-others.js"></script>
+</body>
+
+</html>

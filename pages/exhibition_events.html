@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>CodePen - Responsive Heading Slider - Swiper</title>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css'>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
+   <link rel='stylesheet' href='https://unpkg.com/aos@2.3.1/dist/aos.css'>
+   <link rel="stylesheet" href="../assets/css/all events.css">
+
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      crossorigin="anonymous" />
+   <link href="../assets/css/style.css" rel="stylesheet">
+   <link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <style>
+      .dropbtn {
+         color: #fff;
+
+         padding-top: 5px;
+         padding-bottom: 5px;
+         padding-left: 4px;
+         padding-right: 37px;
+         font-family: "Raleway", sans-serif;
+         background: #1224cb;
+         border: 2px solid #162cff;
+         transition: all ease-in-out 0.3s;
+         font-weight: 500;
+         line-height: 1;
+         font-size: 13px;
+         margin-left: 11px;
+      }
+
+      .dropbtnn {
+         color: rgba(202, 206, 221, 0.8);
+         font-family: "Raleway", sans-serif;
+         text-decoration: none;
+         border: none;
+         font-size: 15px;
+         background: transparent;
+         transition: all ease-in-out 0.3s;
+         font-weight: 600;
+         margin-left: 8px;
+         margin-top: 2px;
+         padding-top: 5px;
+         padding-bottom: 5px;
+         padding-left: 1px;
+         outline: none
+      }
+
+
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+         position: relative;
+         display: block;
+      }
+
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+         display: none;
+         background-color: #f9f9f9;
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+         z-index: 1;
+      }
+
+      /* Links inside the dropdown */
+      .dropdown-content a {
+         color: black;
+
+         text-decoration: none;
+
+         display: block;
+      }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+         color: #0007e0;
+         background-color: rgb(223, 227, 230);
+      }
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+         display: block;
+
+      }
+
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {
+
+         transition: all ease-in-out 0.3s;
+         background-color: transparent;
+         border: 2px solid #162cff;
+
+      }
+
+      #mobile-nav .dropbtnn {
+         font-size: 17px;
+
+         color: #fff;
+         font-family: "Raleway", sans-serif;
+
+         text-decoration: none;
+         outline: none;
+      }
+
+      #mobile-nav .dropdown-content {
+         background: rgb(115 123 153 / 90%)
+      }
+      #reg{
+  background:#1224cb;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid lightgrey;
+  line-height: 0.5;
+  width: fit-content ;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+
+   </style>
+
+</head>
+
+<body>
+   <video style="position:fixed;z-index: -100;"
+   src="../assets/media/Ourevents/background blue particles dust abstract light motion titles cinematic background loop.mp4"
+   autoplay muted loop></video>
+
+   <header id="header">
+      <div class="container">
+
+         <div id="logo" class="pull-left">
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+            <a href="/" class="scrollto"><img src="../assets/media/logo.png" alt="" title=""></a>
+         </div>
+
+         <nav id="nav-menu-container">
+            <ul class="nav-menu">
+               <li ><a href="/">Home</a></li>
+               <li><a href="./about.html">About</a></li>
+               <li class="menu-active"><a href="./all events.html">Events</a></li>
+               <li><a href="/#schedule">Schedule</a></li>
+               <li><a href="./gallery.html">Gallery</a></li>
+               <li><a href="./sponsors.html">Sponsors</a></li>
+               <li><a href="./contact.html">Contact Us</a></li>
+               <li id = "reg"><a href="/#registrationdetails">Register</a></li>
+               <li>
+                  <div class="dropdown">
+                     <button class="dropbtn" id="dropbtn-login" style="padding-left: 32px;">Login</button>
+                     <div class="dropdown-content">
+                        <a href="/sign">Participant</a>
+                        <a href="/sign-cdn">Coordinator</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </nav><!-- #nav-menu-container -->
+      </div>
+   </header><!-- #header -->
+<br><br>
+   <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+         <!-- Slider -->
+         <div class="swiper-slide">
+            <span class="number">01</span>
+
+            <div class="pic">
+               <h1>Science Model Exhibition
+
+               </h1>
+
+               <img src="../assets/media/evnt/12.jpg" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>Be ready for the best robotics exhibition of the town. The biggest techfest of Kolkata, IEM Innovacion
+                  2023 and IEM Innovation & Entrepreneurship Development Cell (IEDC) brings to you the an exhibition of
+                  modern technology like no other. This exhibition provides a platform to put forth your out-of-the-box
+                  ideas and gives a chance to demonstrate its prototype in front of leading state industrialists who may
+                  just fund your brilliant concepts. It provides you with an exposure towards latest technologies and
+                  helps the engineering fraternity in the better evolution of ideas. So get your brains storming and
+                  seatbelts fastened to showcase your ideas in the biggest techfest of Kolkata, Innovacion 2023. So
+                  buckle up! GET > SET > INNOVATE</p>
+               <button class="btn1046"><a href="" style="text-decoration-line:none;">rules</a></button>
+               <!-- missing rules -->
+
+
+            </div>
+         </div>
+         <!-- END Slide1 -->
+         <!-- Slide2 -->
+         <!-- END Slide1 -->
+         <!-- Slide2 -->
+         <!-- Slider -->
+
+         <!-- Slide1 -->
+         <div class="swiper-slide">
+            <span class="number">02</span>
+
+            <div class="pic">
+               <h1>Innovare
+               </h1>
+
+               <img src="../assets/media/evnt/13.jpg" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>No dream is enough until you have lived every moment of it. Everyday. They say that the best things
+                  are done by hand. Presenting Innovare, the model making competition of the biggest techfest of
+                  Kolkata, Innovacion 2023. It's the hub of ideas and the congregation of implemented dream projects . A
+                  platform where ideas meet implementation. A competition where students from both schools and colleges
+                  are invited to showcase their models and compete with their respective peer groups. This winter
+                  Innovate like never before at Innovacion 2023, the biggest techfest of Kolkata.</p>
+               <button class="btn1046"><a href="" style="text-decoration-line:none;">rules</a></button>
+               <!-- missing rules -->
+
+
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <span class="number">03</span>
+
+            <div class="pic">
+               <h1>Electroslides
+
+               </h1>
+
+               <img src="../assets/media/evnt/2.png" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>IEM Innovacion 2023 is going to organise an international paper-presentation event ELECTROSLIDES -
+                  2023 & will start it's maiden run in the fold of Innovacion 2023. The said event will accept
+                  participants from different institutions and industries across the globe in the field of Electrical
+                  Engineering and it's periphery. A team consisting of a maximum up to 4 members will present their
+                  research paper , in front of eminent experts in relevant fields.</p>
+               <button class="btn1046"><a href="" style="text-decoration-line:none;">rules</a></button>
+               <!-- missing rules -->
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <span class="number">04</span>
+
+            <div class="pic">
+               <h1>Aperture
+               </h1>
+
+               <img src="../assets/media/evnt/15.png" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>If your camera lens has a story to share, this is the best place for it to air. With the stage all set
+                  and the countdown pacing down the order its about time Aperture, INNOVACION make its move. With the
+                  motive all clear, the 2023 edition of APERTURE, INNOVACION sure looks to surpass its previous records
+                  with its extensive outreach and format up-gradations. As INNOVACION again makes its way back into the
+                  town with it 2023 edition and sets the IEM and UEM campus with activity, each and every individual
+                  from the institute have found their interests and involved themselves in the biggest techno-management
+                  event of the city in some way or the other. It is always a feast for every anxious photographer to
+                  capture those short-lived moments and take a share out of the ever-flowing river of time.</p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/10LMb3tJFMU1QVP7WeoMGT8EQtTN4IdsB/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+
+            </div>
+         </div>
+         <div class="swiper-slide">
+            <span class="number">05</span>
+
+            <div class="pic">
+               <h1>Game Dev Expo
+               </h1>
+
+               <img src="../assets/media/evnt/g.png" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>Innovación-2023 is releasing a new chapter of Gaming Expo,which is aimed at creating an excellent
+                  platform for all
+                  stakeholders in the Indian and international gaming market to showcase new trends and technologies in
+                  the gaming arena.
+                  Game dev is an utopia for developers to gain valuable insights and also to exhibit their games with
+                  other professionals
+                  and gaming bugs. Its time to get that much
+                  visibility and credibility that your game deserves. Exhibit at Game Dev to build a presence in your
+                  target market.</p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/1-gSn5mNCNXaF74pyZVyW5x_TMEaaONYI/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+               <!-- missing rules -->
+
+            </div>
+         </div>
+
+
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-arrows">
+         <div class="swiper-button-prev"><span></span></div>
+         <div class="swiper-button-next"><span></span></div>
+      </div>
+   </div>
+   <footer id="footer">
+      <div class="footer-top">
+         <div class="container">
+            <div class="row">
+
+               <div class="col-lg-4  footer-info">
+                  <img src="../assets/media/logo.png" alt="TheEvenet" />
+               </div>
+
+
+
+               <div class="col-lg-4 col-md-9 footer-links">
+                  <h4>Useful Links</h4>
+                  <br>
+
+
+                  <a href="/register">
+                     <button class="footerbtn">Register Now</button>
+                   </a>
+
+                  <br><br>
+                  <a href="https://goo.gl/maps/hun1Xpozt8yGYJVJA">
+                     <a href="https://goo.gl/maps/6gzdzSKuE4PE22ADA">
+                        <button class="footerbtn">
+                           Location
+                     </a>
+                     </button>
+                  </a>
+               </div>
+
+               <div class="col-lg-4 col-md-6 footer-contact">
+                  <h4>Contact Us</h4>
+                  <p>
+                     Management House, D-1, Sector-V, Saltlake Electronics Complex <br>
+                     Kolkata – 700 091, West Bengal, India. <br>
+
+
+
+                     <strong>Email:</strong> iemxinnovacion@gmail.com<br>
+                  </p>
+
+                  <div class="social-links">
+                     <a href="http://facebook.com/iem.innovacion"><img src="../assets/media/facebook.png" height="28" width="28" alt="Facebook"></a>
+                     <a href="https://www.instagram.com/ieminnovacion/"><img src="../assets/media/insta.png" height="32" width="32" alt="Instagram"></i></a>
+                     <a href="https://www.youtube.com/@ieminnovacion"><img src="../assets/media/web.png" height="25px" width="85%" alt="Web"></i></a>
+                     <a href="../pages/contact.html"><img src="../assets/media/contact_us_logo.png" height="28.5px"
+                           width="97%" alt="Web"></i></a>
+                   </div>
+
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+            <div class="copyright">
+               &copy; Copyright <strong>INNOVACIÓN 2023</strong>. All Rights Reserved
+            </div>
+         </div>
+   </footer><!-- #footer -->
+   <!-- partial -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+   <script src="../assets/js/all events.js"></script>
+   <script src="../assets/lib/jquery/jquery.min.js"></script>
+   <script src="../assets/lib/superfish/superfish.min.js"></script>
+   <script src="../assets/lib/wow/wow.min.js"></script>
+   <script src="../assets/lib/venobox/venobox.min.js"></script>
+
+   <!-- Template Main Javascript File -->
+   <script src="../assets/js/main-others.js"></script>
+</body>
+
+</html>

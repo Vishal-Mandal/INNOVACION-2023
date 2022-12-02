@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>CodePen - Responsive Heading Slider - Swiper</title>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css'>
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
+   <link rel='stylesheet' href='https://unpkg.com/aos@2.3.1/dist/aos.css'>
+   <link rel="stylesheet" href="../assets/css/all events.css">
+
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      crossorigin="anonymous" />
+   <link href="../assets/css/style.css" rel="stylesheet">
+   <link href="../assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <style>
+      .dropbtn {
+         color: #fff;
+
+         padding-top: 5px;
+         padding-bottom: 5px;
+         padding-left: 4px;
+         padding-right: 37px;
+         font-family: "Raleway", sans-serif;
+         background: #1224cb;
+         border: 2px solid #162cff;
+         transition: all ease-in-out 0.3s;
+         font-weight: 500;
+         line-height: 1;
+         font-size: 13px;
+         margin-left: 11px;
+      }
+
+      .dropbtnn {
+         color: rgba(202, 206, 221, 0.8);
+         font-family: "Raleway", sans-serif;
+         text-decoration: none;
+         border: none;
+         font-size: 15px;
+         background: transparent;
+         transition: all ease-in-out 0.3s;
+         font-weight: 600;
+         margin-left: 8px;
+         margin-top: 2px;
+         padding-top: 5px;
+         padding-bottom: 5px;
+         padding-left: 1px;
+         outline: none
+      }
+
+
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+         position: relative;
+         display: block;
+      }
+
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+         display: none;
+         background-color: #f9f9f9;
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+         z-index: 1;
+      }
+
+      /* Links inside the dropdown */
+      .dropdown-content a {
+         color: black;
+
+         text-decoration: none;
+
+         display: block;
+      }
+
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+         color: #0007e0;
+         background-color: rgb(223, 227, 230);
+      }
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+         display: block;
+
+      }
+
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {
+
+         transition: all ease-in-out 0.3s;
+         background-color: transparent;
+         border: 2px solid #162cff;
+
+      }
+
+      #mobile-nav .dropbtnn {
+         font-size: 17px;
+
+         color: #fff;
+         font-family: "Raleway", sans-serif;
+
+         text-decoration: none;
+         outline: none;
+      }
+
+      #mobile-nav .dropdown-content {
+         background: rgb(115 123 153 / 90%)
+      }
+      #reg{
+  background:#1224cb;
+  font-family: "Raleway", sans-serif;
+  border: 2px solid lightgrey;
+  line-height: 0.5;
+  width: fit-content ;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+   </style>
+
+</head>
+
+<body>
+   <video style="position:fixed;z-index: -100;"
+   src="../assets/media/Ourevents/background blue particles dust abstract light motion titles cinematic background loop.mp4"
+   autoplay muted loop></video>
+
+   <header id="header">
+      <div class="container">
+
+         <div id="logo" class="pull-left">
+            <!-- Uncomment below if you prefer to use a text logo -->
+            <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+            <a href="/" class="scrollto"><img src="../assets/media/logo.png" alt="" title=""></a>
+         </div>
+
+         <nav id="nav-menu-container">
+            <ul class="nav-menu">
+               <li><a href="/">Home</a></li>
+               <li><a href="./about.html">About</a></li>
+               <li class="menu-active"><a href="./all events.html">Events</a></li>
+               <li><a href="/#schedule">Schedule</a></li>
+               <li><a href="./gallery.html">Gallery</a></li>
+               <li><a href="./sponsors.html">Sponsors</a></li>
+               <li><a href="./contact.html">Contact Us</a></li>
+               <li id = "reg"><a href="/#registrationdetails">Register</a></li>
+               <li>
+                  <div class="dropdown">
+                     <button class="dropbtn" id="dropbtn-login" style="padding-left: 32px;">Login</button>
+                     <div class="dropdown-content">
+                        <a href="/sign">Participant</a>
+                        <a href="/sign-cdn">Coordinator</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </nav><!-- #nav-menu-container -->
+      </div>
+   </header><!-- #header -->
+<br><br>
+   <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+
+         
+         <div class="swiper-slide">
+            <span class="number">01</span>
+
+            <div class="pic">
+               <h1>MAD CAD
+               </h1>
+
+               <img src="../assets/media/evnt/cad.png" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>MAD CAD is an event by Innovación that challenges you to create and design something new, on the topic
+                  given right on the stage. This gives an unique occasion to prove your skills and test your creativity
+                  by participating in this remarkable event.Indoor engineers are immensely important for us because
+                  their efforts provide critical support to us and thus without their pioneering and innovative efforts,
+                  our work wouldn't be possible. So be dilligent and accomplish the task. Bring the engineer out.</p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/10cM-i88MOKOyHhxxdIaWKMIsqK9w3lJf/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+
+            </div>
+         </div>
+
+         <!-- Slide1 -->
+         <div class="swiper-slide">
+            <span class="number">02</span>
+
+            <div class="pic">
+               <h1>Mathemagic
+
+               </h1>
+
+               <img src="../assets/media/evnt/14.png" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>Mathemagic, one of the paramount events of Innovacion 2023, the biggest techfest of Kolkata is for
+                  those crazy about mathematics and the patterns hidden in the cold, yet beautiful landscape of
+                  mathematics. Would you believe us, if we told you that infinite sums can add up to finite numbers?
+                  Would you believe us, if we informed you that you can use a parabola to find prime numbers? Should you
+                  believe us, if we showed you that natural shapes are present in one single fractal? How about, the
+                  existence of a few irrational numbers which determine life as we know it? Let us blow your mind, this
+                  March, at Mathemagic, only at Innovacion 2023,the biggest techfest in Kolkata. Participate in groups
+                  of minimum 2 and maximum 3 people and stand a chance to win exciting prizes.</p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/10ON_9qO9dHanIIbzkeSGZV75aXRmQaN-/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+            </div>
+         </div>
+         <!-- END Slide1 -->
+
+         <!-- Slide1 -->
+         <div class="swiper-slide" id="qzcd">
+
+            <span class="number">03</span>
+
+            <div class="pic">
+               <h1>Quiz Crusade
+               </h1>
+
+               <img src="../assets/media/evnt/17.png" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>Gear up folks for the biggest tech fest in Kolkata. Prepare for the ultimate battle royale of the best
+                  of the best, right here at IEM Innovacion, 2023! While people brainstorm during the entire fest, the
+                  main workout session of the brain, the ultimate challenge of the real neural interface, comes this
+                  year, bigger, better, and so much tougher. Configure your brain to master the ultimate test, get those
+                  neurons firing and come down to IEM for a challenge that is riveting and will keep you on the edge of
+                  the seat from the beginning till the end, and leave you asking for more. Come and experience quizzing
+                  like never before, at Innovacion 2023, The Quiz Crusade , 2023.</p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/10y7NzDgUqoVTfsNVOIrI3FyNdWSnB_d9/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+            </div>
+         </div>
+         <!-- END Slide1 -->
+         <!-- Slide1 -->
+         <div class="swiper-slide">
+
+            <span class="number">04</span>
+
+            <div class="pic">
+               <h1>The Bull Master
+               </h1>
+
+               <img src="../assets/media/evnt/18.png" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>"One of the funny things about stock market is that every time one person buys, another sells, and both
+                  think they are astute" - William Feather. Want to learn the trade of stock markets without losing a
+                  single piece? Well, we have just the right thing for you! Learn how the stock market works, understand
+                  the basics of the stock market through experiential learning of economic and financial concepts and
+                  stand a chance to win exciting prizes, only at The Bull Master - The Stock Market Challenge of
+                  Innovacion 2023.</p>
+               <button class="btn1046"><a
+                     href="https://drive.google.com/file/d/10aS0Dw4jov_fDHrIyqrvxZ61fYbJyR0-/view?usp=share_link"
+                     style="text-decoration-line:none;">rules</a></button>
+
+
+            </div>
+         </div>
+         <!-- END Slide1 -->
+         <!-- Slide1 -->
+         <div class="swiper-slide">
+
+            <span class="number">05</span>
+
+            <div class="pic">
+               <h1>IIISO
+               </h1>
+
+               <img src="../assets/media/evnt/22.png" alt="eventlogo" class="event-logo">
+
+            </div>
+            <div class="slide-text playText">
+               <h1>About
+               </h1>
+               <p>IEM Innovacion 2023 invites intellectuals from all around the globe to participate in the IEM
+                  Innovacion International Science Olympiad (IIISO), to test and showcase their analytical, logical, and
+                  critical thinking skills and talents in various fields of science including physics, chemistry, and
+                  biology on an international level. Compete only with the best of the best and prove your mettle on
+                  this unique platform provided by IEM Innovacion 2023.</p>
+               <button class="btn1046"><a href=" " style="text-decoration-line:none;">rules</a></button>
+
+
+            </div>
+         </div>
+
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-arrows">
+         <div class="swiper-button-prev"><span></span></div>
+         <div class="swiper-button-next"><span></span></div>
+      </div>
+   </div>
+   <footer id="footer">
+      <div class="footer-top">
+         <div class="container">
+            <div class="row">
+
+               <div class="col-lg-4  footer-info">
+                  <img src="../assets/media/logo.png" alt="TheEvenet" />
+               </div>
+
+
+
+               <div class="col-lg-4 col-md-9 footer-links">
+                  <h4>Useful Links</h4>
+                  <br>
+
+
+                  <a href="/register">
+                     <button class="footerbtn">Register Now</button>
+                   </a>
+
+                  <br><br>
+                  <a href="https://goo.gl/maps/hun1Xpozt8yGYJVJA">
+                     <a href="https://goo.gl/maps/6gzdzSKuE4PE22ADA">
+                        <button class="footerbtn">
+                           Location
+                     </a>
+                     </button>
+                  </a>
+               </div>
+
+               <div class="col-lg-4 col-md-6 footer-contact">
+                  <h4>Contact Us</h4>
+                  <p>
+                     Management House, D-1, Sector-V, Saltlake Electronics Complex <br>
+                     Kolkata – 700 091, West Bengal, India. <br>
+
+
+                     <strong>Email:</strong> iemxinnovacion@gmail.com<br>
+                  </p>
+
+                  <div class="social-links">
+                     <a href="http://facebook.com/iem.innovacion"><img src="../assets/media/facebook.png" height="28" width="28" alt="Facebook"></a>
+                     <a href="https://www.instagram.com/ieminnovacion/"><img src="../assets/media/insta.png" height="32" width="32" alt="Instagram"></i></a>
+                     <a href="https://www.youtube.com/@ieminnovacion"><img src="../assets/media/web.png" height="25px" width="85%" alt="Web"></i></a>
+                     <a href="../pages/contact.html"><img src="../assets/media/contact_us_logo.png" height="28.5px"
+                           width="97%" alt="Web"></i></a>
+                   </div>
+
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+      <div class="container">
+            <div class="copyright">
+               &copy; Copyright <strong>INNOVACIÓN 2023</strong>. All Rights Reserved
+            </div>
+         </div>
+      </div>
+   </footer><!-- #footer -->
+   <!-- partial -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+   <script src="../assets/js/all events.js"></script>
+   <script src="../assets/lib/jquery/jquery.min.js"></script>
+   <script src="../assets/lib/superfish/superfish.min.js"></script>
+   <script src="../assets/lib/wow/wow.min.js"></script>
+   <script src="../assets/lib/venobox/venobox.min.js"></script>
+
+   <!-- Template Main Javascript File -->
+   <script src="../assets/js/main-others.js"></script>
+</body>
+
+</html>
+
+
+
+
